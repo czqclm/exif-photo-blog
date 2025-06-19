@@ -17,7 +17,7 @@ services:
     volumes:
       - .env:/app/.env
     ports:
-      - '57017:3000'
+      - '47017:3000'
     depends_on:
       - exif-postgres
 
