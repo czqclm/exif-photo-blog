@@ -1,6 +1,6 @@
 version: '3.9'
 services:
-  postgres:
+  exif-postgres:
     image: 'postgres:latest'
     environment:
       POSTGRES_USER: postgres
@@ -19,7 +19,7 @@ services:
     ports:
       - '57017:3000'
     depends_on:
-      - postgres
+      - exif-postgres
 
 
 
